@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* .app {
+  margin: 0 auto;
+} */
+
+.friendsContainer {
+  margin: 0 auto;
+  max-width: 650px;
+  background: rgb(233, 230, 230);
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-left: 5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.friendCard {
+  width: 45%;
+  margin: 15px;
 }
+
