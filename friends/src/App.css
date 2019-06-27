@@ -22,6 +22,64 @@
   text-align: center;
   font-size: 28px;
 }
+.addFriend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .addFriend-Header {
   text-align: center;
+}
+.addFriend input {
+  text-align: center;
+  height: 28px;
+  font-size: 20px;
+  width: 600px;
+}
+.addFriend button {
+  height: 28px;
+  font-size: 20px;
+  width: 600px;
+}
+.updateFriend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.updateFriend input{ 
+  text-align: center;
+  height: 28px;
+  font-size: 20px;
+  width: 600px;
+}
+.updateFriend Button{
+  height: 28px;
+  width: 600px;
+  font-size: 20px;
+}
+.friends-List {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.friends-List a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.friend-Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.friend-Card p{
+  font-size: 18px;
+}
+.friend-Card a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+.friend-Card a:hover{
+  color: red;
 }

@@ -8,12 +8,12 @@ const Friend = props => {
         return <p>...Loading</p>
     }
     return (
-        <div>
+        <div className='friend-Card'>
             <h2>{friend.name}</h2>
-            <p>{friend.age}</p>
-            <p>{friend.email}</p>
+            <p><strong>Age: {friend.age}</strong></p>
+            <p><strong>Email: {friend.email}</strong></p>
 
-            <Link to={`/update/${friend.id}`}>Update</Link>
+            <Link to={`/update/${friend.id}`}>Update Friend Here</Link>
         </div>
     )
 }

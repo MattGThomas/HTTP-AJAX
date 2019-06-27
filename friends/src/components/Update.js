@@ -54,7 +54,7 @@ class Update extends React.Component {
                 errorMessage: err.response.data.error
             })
         })
-
+        // method allows friend information to be updated
     }
 
     removeFriend = (evt) => {
@@ -63,6 +63,7 @@ class Update extends React.Component {
         const id = this.props.match.params.id
         
         axios.delete(`http://localhost:5000/friends/${id}`)
+            // allows friend to be deleted from api data
             .then((response) => {
                 this.setState({
                     errorMessage: null
@@ -81,8 +82,8 @@ class Update extends React.Component {
         const { name, email, age } = this.state
 
         return (
-            <form onSubmit={this.editFriend}>
-                <h2>Update Friend Here</h2>
+            <form onSubmit={this.editFriend} className='updateFriend'>
+                <h2 className='updateFriend-Header'>Update Friend Here</h2>
                 <input type='text' name='name' placeholder='Name' value={name} onChange={this.changeHandle} /> 
                 <input type='text' name='age' placeholder='Age' value={age} onChange={this.changeHandle} />
                 <input type='text' name='email' placeholder='Email' value={email} onChange={this.changeHandle} />

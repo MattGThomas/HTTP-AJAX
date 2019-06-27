@@ -45,7 +45,7 @@ class NewFriend extends React.Component {
 
         return (
             <form onSubmit={this.addFriend} className='addFriend'>
-                <h1 className='addFriend-Header'>Add A New Friend</h1>
+                <h1 className='addFriend-Header'>Add A New Friend Here</h1>
                 
                 <input 
                     type="text" 
@@ -69,7 +69,7 @@ class NewFriend extends React.Component {
                     onChange={this.changeHandle}
                 />
 
-                <button type='submit'>Add</button>
+                <button type='submit'><strong>Add</strong></button>
             </form>
         )
     }
