@@ -1,0 +1,19 @@
+/* .app {
+  margin: 0 auto;
+} */
+
+.friendsContainer {
+  margin: 0 auto;
+  max-width: 650px;
+  background: rgb(233, 230, 230);
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  padding-left: 5%;
+}
+
+.friendCard {
+  width: 45%;
+  margin: 15px;
+}
+
